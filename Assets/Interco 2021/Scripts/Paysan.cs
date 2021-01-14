@@ -11,6 +11,7 @@ public class Paysan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -20,8 +21,15 @@ public class Paysan : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
+            
             rb.AddTorque(torque, ForceMode2D.Impulse);
             rb.AddForce(impulse, ForceMode2D.Impulse);
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+
+            rb.AddTorque(torque, ForceMode2D.Impulse);
+            rb.AddForce(impulse * -1, ForceMode2D.Impulse);
         }
     }
 }
