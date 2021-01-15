@@ -32,4 +32,9 @@ public class Paysan : MonoBehaviour
             rb.AddForce(impulse * -1, ForceMode2D.Impulse);
         }
     }
+
+    private void OnMouseDown()
+    {
+        Debug.Log("test");
+    }
 }
