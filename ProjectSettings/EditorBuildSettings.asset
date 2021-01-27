@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Videolab/Scenes/Adam.unity
+    guid: f9268aaae5804224b97c3fcc60c02e67
   m_configObjects: {}
